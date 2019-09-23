@@ -1,5 +1,5 @@
 #!/bin/bash
 
-chmod u+x xpl
+chmod u+x open
 
 cmd.exe /c start .
