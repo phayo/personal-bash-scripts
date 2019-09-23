@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# ##changing the permissions to this file and also making it an executable 
+chmod u+x wordline.sh
+
+foo=$(cat $1 | wc -l)
+foo=$(( foo + 1))
+echo $foo

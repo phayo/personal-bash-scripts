@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# ##changing the permissions to this file and also making it an executable 
+chmod u+x fsize.sh
+
+du -h $1

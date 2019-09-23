@@ -1,0 +1,5 @@
+#!/bin/bash
+
+chmod u+x open.sh
+
+cmd.exe /c start .

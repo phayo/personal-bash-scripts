@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# ##changing the permissions to this file and also making it an executable 
+chmod u+x freader.sh
+
+# Gets all folders and files in a given path == $1
+lists=(ls $1/*)
+
+# Initaializing counter variables
+fols=0
+fils=0
+invl=0
+
+echo "Identified path $1"
+
+# loop throught the list of nested files and folders
+for ((i=1; i<${#lists[@]}; i++));
+do
+    # check if the nested element is a directory
+    if [[ -d ${lists[$i]} ]]; then
+        echo ${lists[$i]}
+        fols=$((fols + 1))
+
+    # check if the nested element is a file
+    elif [[ -f ${lists[$i]} ]]; then
+        fils=$((fils + 1))
+
+    # Check if the nested element is invalid
+    else
+        invl=$((invl + 1))
+    fi
+done
+
+# print the result
+echo "There are $fols folders, $fils files and $invl invalid paths in this directory"
+exit 0
