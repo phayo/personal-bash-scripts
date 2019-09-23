@@ -14,6 +14,9 @@ fi
 # download the open.sh bash script
 wget https://raw.githubusercontent.com/phayo/personal-bash-scripts/master/open -P ~/bin/
 
+# make the open an executable
+chmod u+x ~/bin/open
+
 # read the contents of the bash profile of the user and store in a variable bsh
 bsh="$(cat ~/.bash_profile)"
 echo $bsh
