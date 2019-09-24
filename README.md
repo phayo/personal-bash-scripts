@@ -129,6 +129,11 @@ Finally it reloades the profile so that the user can start using it immediatelly
 
 This is the script to download push-commit and makes it immediately available to use by the user, it works exactly like the xplor above execpt for changes in the files it needs to download.
 
+##### Check source code for more insight
+###### To use this script run this command... curl https://raw.githubusercontent.com/phayo/personal-bash-scripts/master/ps-cm | bash
+###### Please copy from curl till bash, dont just click the link!!!
+
+
 ### One Again Use with CAUTION
 
 
